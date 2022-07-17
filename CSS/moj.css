@@ -1,0 +1,935 @@
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: black;
+	scroll-behavior: smooth;
+	font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 1em;
+}
+
+.line {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.underline {
+	background-color: dodgerblue;
+	height: 4px;
+	width: 160px;
+}
+
+.menu {
+	position: fixed;
+	width: 100%;
+	height: 70px;
+	top: 0%;
+	z-index: 600;
+}
+
+.burger,
+.burgerTwo {
+	position: absolute;
+	color: dodgerblue;
+	right: 1em;
+	top: 1em;
+	font-size: 2rem;
+	cursor: pointer;
+}
+
+.burgerTwo {
+	color: black;
+	font-size: 2.2rem;
+	display: none;
+}
+
+.menunav {
+	height: 70px;
+	background-color: dodgerblue;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+
+.menunavshow {
+	display: flex;
+}
+
+.colormenu {
+	font-size: 3rem;
+	text-decoration: none;
+	color: black;
+	transition: color 0.3s;
+	margin-right: 0.5em;
+	font-family: "Dancing Script", cursive;
+}
+
+.colormenu:hover {
+	color: white;
+}
+
+.tsbox {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1em;
+}
+
+.tsnone {
+	background-image: url("../IMG/IMG_6877.JPG");
+	background-size: cover;
+	background-position: center;
+	height: 0px;
+	width: 0px;
+}
+
+.ts {
+	margin-top: -270px;
+	background-image: url("../IMG/IMG_6877.JPG");
+	background-size: cover;
+	background-position: 0 30%;
+	height: 260px;
+	width: 300px;
+}
+
+.tsomnie {
+	margin-left: 1em;
+	color: white;
+	height: 600px;
+	width: 500px;
+	display: block;
+	text-align: center;
+}
+
+.tsnav {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+.spanaboutus {
+	font-family: "Montserrat", sans-serif;
+	color: white;
+	font-size: 1.2rem;
+}
+
+.tsabouts {
+	color: dodgerblue;
+	font-size: 2rem;
+	font-family: "Dancing Script", cursive;
+}
+.introduction {
+	position: absolute;
+	margin-top: 4em;
+}
+
+.boxintroduction {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 2em 2em;
+}
+
+.boxintroductioncol {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-right: 2em;
+	transition: transform 0.3s;
+}
+
+.boxintroductioncol:hover {
+	transform: scale(1.2);
+}
+
+.iconintroduction {
+	color: dodgerblue;
+	font-size: 3rem;
+}
+
+.textintroduction {
+	color: white;
+}
+
+.textnavbig {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	text-align: center;
+}
+
+.programmersport {
+	font-family: "Montserrat", sans-serif;
+	font-size: 1.5rem;
+	color: white;
+	overflow: visible;
+	margin-bottom: 2em;
+}
+
+.arrow {
+	margin-top: 1em;
+	cursor: pointer;
+	animation: color 5s 1s infinite;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.arrowicon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@keyframes color {
+	0% {
+		font-size: 3rem;
+		width: 400px;
+		color: white;
+		background-color: black;
+	}
+
+	50% {
+		font-size: 4rem;
+		width: 100%;
+		color: white;
+		background-color: dodgerblue;
+	}
+
+	100% {
+		font-size: 2rem;
+		width: 200px;
+		color: black;
+		background-color: white;
+	}
+}
+
+.boxIMG {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.imgHeader {
+	margin-top: 70px;
+	background-image: url("../IMG/IMG_6877.JPG");
+	background-size: cover;
+	background-position: 0 30%;
+	width: 100%;
+	height: 400px;
+	z-index: -300;
+	position: sticky;
+	z-index: 300;
+	border-radius: 5px;
+}
+
+.shadow {
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 400;
+	width: 100%;
+	height: 100%;
+}
+
+.technologies {
+	position: relative;
+	width: 100%;
+	height: 400px;
+}
+
+.boxIMGTech {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.carouselBox {
+	position: relative;
+	margin-top: 2em;
+}
+
+.carouselBoxItem {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.textCarousel {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.textTest {
+	width: 200px;
+	height: 400px;
+}
+
+.carousel {
+	width: 600px;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.carousel-inner {
+	display: flex;
+	width: 600px;
+	height: 400px;
+	align-items: center;
+}
+
+.carousel-item {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+}
+
+.imgcarousel {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+}
+
+.skills {
+	position: relative;
+	margin-top: -200px;
+}
+
+.boxskill {
+	display: flex;
+	flex-direction: column;
+}
+
+.boxskilldescribe {
+	width: 100%;
+	height: 100%;
+	background-color: dodgerblue;
+}
+
+.navskill {
+	font-size: 4rem;
+	color: white;
+	font-family: "Dancing Script", cursive;
+	margin-left: 10px;
+}
+
+.navskilltext {
+	font-size: 2rem;
+	margin-left: 10px;
+}
+
+.skillstudy {
+	margin-top: 0.2em;
+	margin-right: 30px;
+	margin-bottom: 0.2em;
+	font-size: 8.5rem;
+	align-items: center;
+	transition: transform 0.3s;
+}
+
+.skillstudy:hover {
+	transform: scale(1.2);
+}
+
+.itemskill {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.boxcuriosities {
+	height: 100%;
+}
+
+.boxImgtask {
+	margin-top: 50px;
+}
+
+.boxImgtask,
+.homeOffice,
+.win,
+.coding {
+	width: 1280px;
+	background-size: contain;
+	background-position: center;
+}
+
+.homeOffice {
+	background-image: url("../IMG/study.jpg");
+	background-size: cover;
+}
+
+.win {
+	background-image: url("../IMG/win.jpg");
+}
+
+.coding {
+	background-image: url("../IMG/coding.jpg");
+}
+
+.about-us-bg {
+	position: absolute;
+	bottom: 0;
+	height: 120px;
+	width: 100%;
+	background-color: rgb(0, 0, 0, 0.8);
+	text-align: center;
+	align-items: center;
+}
+
+.about-us-box {
+	position: relative;
+	height: 500px;
+	width: 100%;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	border-top-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	overflow: hidden;
+}
+
+.about-us-text {
+	position: absolute;
+	bottom: 20px;
+	padding: 20px 40px;
+	text-align: center;
+	color: #fff;
+	font-size: 12px;
+}
+
+.about-us-text h3 {
+	margin-top: 10px;
+	text-transform: uppercase;
+	color: dodgerblue;
+	font-weight: bold;
+}
+
+.boxcontact {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin-top: -70px;
+}
+
+.boxcontactfooter {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: dodgerblue;
+	margin-top: 2em;
+}
+
+.footercol {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	margin-top: 3em;
+}
+
+.footerrow {
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	align-items: center;
+	color: black;
+}
+
+.polwarsaw {
+	display: block;
+}
+
+.phoneanimation {
+	animation: phone 1s 0.3s infinite;
+	margin-right: 1em;
+}
+
+@keyframes phone {
+	0% {
+		rotate: 45deg;
+	}
+	20% {
+		rotate: -45deg;
+	}
+	40% {
+		rotate: 45deg;
+	}
+	60% {
+		rotate: -45deg;
+	}
+	80% {
+		rotate: 45deg;
+	}
+	100% {
+		rotate: -45deg;
+	}
+}
+
+.iconfooter {
+	font-size: 3em;
+	color: black;
+	margin: 0.5em 1em;
+}
+
+.iconfootertext {
+	font-size: 2rem;
+}
+
+.contactUsPhoto {
+	background-image: url("../IMG/phone.jpg");
+}
+
+.insta,
+.facebook {
+	background-image: url("../IMG/instagram.png");
+	background-size: cover;
+	background-position: center;
+	width: 200px;
+	height: 200px;
+	border-radius: 5px;
+	transition: transform 0.3s;
+	display: none;
+	cursor: pointer;
+}
+
+.facebook {
+	background-image: url("../IMG/facebook.png");
+	background-position: center;
+	margin-left: 1em;
+}
+
+.instafaceblock {
+	display: block;
+}
+
+.insta:hover,
+.facebook:hover {
+	transform: scale(1.2);
+}
+
+.swirl-in-fwd {
+	-webkit-animation: swirl-in-fwd 0.6s ease-out both;
+	animation: swirl-in-fwd 0.6s ease-out both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2022-7-16 10:54:3
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation swirl-in-fwd
+ * ----------------------------------------
+ */
+@-webkit-keyframes swirl-in-fwd {
+	0% {
+		-webkit-transform: rotate(-540deg) scale(0);
+		transform: rotate(-540deg) scale(0);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: rotate(0) scale(1);
+		transform: rotate(0) scale(1);
+		opacity: 1;
+	}
+}
+@keyframes swirl-in-fwd {
+	0% {
+		-webkit-transform: rotate(-540deg) scale(0);
+		transform: rotate(-540deg) scale(0);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: rotate(0) scale(1);
+		transform: rotate(0) scale(1);
+		opacity: 1;
+	}
+}
+
+.boxachie {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.boxachievements {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 1em;
+}
+
+.wrapper {
+	width: 280px;
+	height: 600px;
+	border-radius: 5px;
+	box-shadow: 5px 5px 10px white;
+	border: 2px solid white;
+	margin-right: 2em;
+	overflow: hidden;
+}
+
+.wrapperbox {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.imgwrap {
+	width: 100%;
+	height: 600px;
+	background-image: url("../IMG/pw.png");
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+}
+
+.imgwraptwo {
+	background-image: url("../IMG/garminwin.jpg");
+}
+
+.imgwrapthree {
+	background-image: url("../IMG/czarny-pas.jpg.webp");
+}
+
+.question {
+	font-size: 2rem;
+	position: relative;
+	margin-top: 0.2em;
+	margin-left: 85%;
+	z-index: 100;
+	content: "";
+	color: black;
+	cursor: crosshair;
+}
+
+.questionqhite,
+.questionqhitetwo,
+.questionqhitethree {
+	color: white;
+}
+
+.shadowwrap,
+.shadowwrapTwo,
+.shadowwrapThree {
+	width: 100%;
+	height: 100%;
+	z-index: -200;
+}
+
+.wrapptext {
+	position: relative;
+	top: 10%;
+	text-align: center;
+	color: white;
+	display: none;
+}
+
+.wrapptextblock {
+	display: block;
+}
+
+.shadowwrapnone,
+.shadowwrapnoneTwo,
+.shadowwrapnoneThree {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 576px) {
+	.boxachievements {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.wrapper,
+	.imgwrap {
+		margin-right: 0em;
+		margin-bottom: 1em;
+		overflow: hidden;
+	}
+
+	.contactUsPhoto {
+		background-image: url("../IMG/phone-small.jpg");
+	}
+
+	.carousel,
+	.carousel-inner {
+		width: 370px;
+		height: 370px;
+	}
+
+	.insta,
+	.facebook {
+		width: 160px;
+		height: 160px;
+	}
+
+	.win,
+	.homeOffice,
+	.coding {
+		background-size: cover;
+		background-position: center;
+	}
+
+	.test {
+		background-image: url("../IMG/calculator-424564_640.jpg");
+		background-attachment: scroll;
+		background-position: 50% 20%;
+	
+	}
+	.win {
+		background-image: url("../IMG/win-small.jpg");
+		background-attachment: scroll;
+		background-position: 60% 0%;
+	}
+
+	.coding {
+		background-image: url("../IMG/coding-small.png");
+		background-attachment: scroll;
+	}
+
+	
+
+	.insta {
+		background-image: url("../IMG/instagram-small.png");
+	}
+
+	.facebook {
+		background-image: url("../IMG/facebook-small.png");
+	}
+
+	.menunav {
+		flex-direction: column;
+		height: 340px;
+	}
+
+	.programmersport {
+		font-size: 1rem;
+	}
+
+	.about-us-bg {
+		height: 330px;
+	}
+
+	.about-us-box {
+		width: 380px;
+		overflow: hidden;
+	}
+
+	.coding {
+		background-image: url("../IMG/coding-small.jpg");
+	}
+
+	@keyframes color {
+		0% {
+			font-size: 2rem;
+			width: 200px;
+			color: white;
+			background-color: black;
+		}
+
+		50% {
+			font-size: 2rem;
+			width: 320px;
+			color: white;
+			background-color: dodgerblue;
+		}
+
+		100% {
+			font-size: 2rem;
+			width: 200px;
+			color: black;
+			background-color: white;
+		}
+	}
+
+	.navskill {
+		font-size: 2.5rem;
+	}
+
+	.tsnav,
+	.tsabouts,
+	.textintroduction,
+	.iconfootertext {
+		font-size: 0.7rem;
+	}
+
+	.minifooter {
+		font-size: 1.2rem;
+	}
+	.textintroduction,
+	.iconfootertext {
+		text-align: center;
+	}
+
+	.iconfootertext {
+		margin: 0.1em;
+	}
+
+	.skillstudy {
+		font-size: 4rem;
+	}
+	.iconintroduction,
+	.navskilltext,
+	.iconfooter {
+		font-size: 1.2rem;
+	}
+
+	.boxintroductioncol {
+		text-align: center;
+	}
+
+	.spanaboutus {
+		font-size: 0.7rem;
+	}
+	.ts {
+		margin-top: -330px;
+		margin-left: 10px;
+	}
+}
+
+.btn {
+	width: 150px;
+	height: 50px;
+	border: 2px solid white;
+	border-radius: 5px;
+	text-transform: uppercase;
+	text-decoration: none;
+	cursor: pointer;
+	color: white;
+	background-color: black;
+	text-align: center;
+	align-items: center;
+	transition: background-color 0.3s;
+}
+
+.btn:hover {
+	background-color: dodgerblue;
+}
+
+@media (max-width: 320px) {
+	.about-us-box {
+		width: 310px;
+	}
+
+	.about-us-bg {
+		height: 295px;
+	}
+	.coding {
+		background-image: url("../IMG/coding-small.jpg");
+	}
+}
+
+@media (min-width: 768px) {
+	.tsnav,
+	.tsabouts {
+		font-size: 1.8rem;
+	}
+	.spanaboutus {
+		font-size: 1.2rem;
+	}
+
+	.colormenu {
+		font-size: 2.6rem;
+	}
+	.ts {
+		margin-top: -330px;
+		margin-left: 10px;
+	}
+
+	.about-us-bg {
+		height: 220px;
+	}
+}
+
+.tracking-in-expand-fwd-top {
+	-webkit-animation: tracking-in-expand-fwd-top 0.8s
+		cubic-bezier(0.215, 0.61, 0.355, 1) both;
+	animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.61, 0.355, 1)
+		both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2022-7-14 18:51:32
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation tracking-in-expand-fwd-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes tracking-in-expand-fwd-top {
+	0% {
+		letter-spacing: -0.5em;
+		-webkit-transform: translateZ(-700px) translateY(-500px);
+		transform: translateZ(-700px) translateY(-500px);
+		opacity: 0;
+	}
+	40% {
+		opacity: 0.6;
+	}
+	100% {
+		-webkit-transform: translateZ(0) translateY(0);
+		transform: translateZ(0) translateY(0);
+		opacity: 1;
+	}
+}
+@keyframes tracking-in-expand-fwd-top {
+	0% {
+		letter-spacing: -0.5em;
+		-webkit-transform: translateZ(-700px) translateY(-500px);
+		transform: translateZ(-700px) translateY(-500px);
+		opacity: 0;
+	}
+	40% {
+		opacity: 0.6;
+	}
+	100% {
+		-webkit-transform: translateZ(0) translateY(0);
+		transform: translateZ(0) translateY(0);
+		opacity: 1;
+	}
+}
