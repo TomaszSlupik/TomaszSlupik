@@ -278,6 +278,13 @@ h2 {
 	align-items: center;
 }
 
+.iconssvgOne {
+	margin-left: -200px;
+	width: 400px;
+	height: 400px;
+	color: rgb(0, 0, 0, 0.8);
+}
+
 .textCarousel {
 	display: flex;
 	flex-direction: row;
@@ -673,7 +680,49 @@ h2 {
 	background-color: rgba(0, 0, 0, 0.8);
 }
 
+.wrapperproject {
+	position: relative;
+	width: 100%;
+	display: grid;
+	margin-top: 6em;
+}
+
+.wrapperprojectbox {
+	position: relative;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 1fr;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.projectimg {
+	position: relative;
+	width: 300px;
+	height: 500px;
+	border: 2px solid white;
+	box-shadow: 5px 5px 10px white;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.firstproject {
+	background-image: url("../IMG/prj/Screenshot_1.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.btnproject {
+	position: absolute;
+	bottom: 0.5%;
+	left: 25%;
+}
+
 @media (max-width: 576px) {
+	.wrapperprojectbox {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
 	.boxachievements {
 		display: flex;
 		flex-direction: column;
@@ -715,7 +764,6 @@ h2 {
 		background-image: url("../IMG/calculator-424564_640.jpg");
 		background-attachment: scroll;
 		background-position: 50% 20%;
-	
 	}
 	.win {
 		background-image: url("../IMG/win-small.jpg");
@@ -727,8 +775,6 @@ h2 {
 		background-image: url("../IMG/coding-small.png");
 		background-attachment: scroll;
 	}
-
-	
 
 	.insta {
 		background-image: url("../IMG/instagram-small.png");
